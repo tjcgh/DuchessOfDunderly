@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{C5899FCE-060A-4958-AE03-F23609CFC0B7}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/monk/DuchessOfDunderly/DuchessOfDunderly.DAL/DataContext.cs" relfile="DuchessOfDunderly.DAL/DataContext.cs" line="32" column="1" />
+      <Breakpoint file="/Users/monk/DuchessOfDunderly/DuchessOfDunderly/Program.cs" relfile="DuchessOfDunderly/Program.cs" line="22" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.DuchessOfDunderly PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

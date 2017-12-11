@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DuchessOfDunderly.DAL\DuchessOfDunderly.DAL.csproj" />
+    <ProjectReference Include="..\DuchessOfDunderly.LoanRule.CurrentLTV\DuchessOfDunderly.LoanRule.CurrentLTV.csproj" />
+    <ProjectReference Include="..\DuchessOfDunderly.LoanRule.IncomePercent\DuchessOfDunderly.LoanRule.IncomePercent.csproj" />
+    <ProjectReference Include="..\DuchessOfDunderly.LoanRule.InterestProfile\DuchessOfDunderly.LoanRule.InterestProfile.csproj" />
+    <ProjectReference Include="..\DuchessOfDunderly.LoanRule.MaturityCompletionDate\DuchessOfDunderly.LoanRule.MaturityCompletionDate.csproj" />
+    <ProjectReference Include="..\DuchessOfDunderly.Discount.CurrentLTV\DuchessOfDunderly.Discount.CurrentLTV.csproj" />
+    <ProjectReference Include="..\DuchessOfDunderly.Discount.IncomePercent\DuchessOfDunderly.Discount.IncomePercent.csproj" />
+    <ProjectReference Include="..\DuchessOfDunderly.Discount.InterestProfile\DuchessOfDunderly.Discount.InterestProfile.csproj" />
+    <ProjectReference Include="..\DuchessOfDunderly.Discount.MaturityCompletionDate\DuchessOfDunderly.Discount.MaturityCompletionDate.csproj" />
+  </ItemGroup>
+</Project>
