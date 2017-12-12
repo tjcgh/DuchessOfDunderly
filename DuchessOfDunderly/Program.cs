@@ -14,17 +14,22 @@ namespace DuchessOfDunderly
 
         static void Main(string[] args)
         {
-            if(args.Length==0)
+            if(args.Length!=2)
             {
-                Console.WriteLine("type the input filename with path...");
+                Console.WriteLine("provide the fully qualified input and output filenames as an arguments to the program...");
                 return;
             }
+            Console.WriteLine("Calculating Loan Grades...");
             rules = RuleConfiguration.BuildRuleList();
             calculator = new LoanGradeCalculator(args[0], rules);
             calculator.CalculateLoanGrades();
-            Console.WriteLine(LoanGrade.Header());
-            foreach (LoanGrade grade in calculator.grades)
-                Console.WriteLine(grade.ToString());
+            using (StreamWriter outputFile = new StreamWriter(args[1]))
+            {
+                outputFile.WriteLine(LoanGrade.Header());
+                foreach (LoanGrade grade in calculator.grades)
+                    outputFile.WriteLine(grade.ToString());
+            }
+            Console.WriteLine("Done...");
         }
     }
 }
